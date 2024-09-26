@@ -20,7 +20,7 @@ spring:
     active: dev,prod
 springdoc:
   pathsToMatch:
-    - /**
-    - /**
+    - .*
+    - .*
   swagger-ui:
     use-root-path: true

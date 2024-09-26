@@ -63,10 +63,10 @@ public class SecurityConfig {
                 .authorizeHttpRequests(
                     authorizeHttpRequests -> authorizeHttpRequests
                         .requestMatchers(
-							"/**"
+							".*"
                 		).permitAll()
-                        .requestMatchers("/**").authenticated()
-                        .requestMatchers("/**").denyAll()
+                        .requestMatchers(".*").authenticated()
+                        .requestMatchers(".*").denyAll()
                 )
             .cors(cors -> {})
                 .build();
